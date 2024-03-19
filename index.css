@@ -1,0 +1,1310 @@
+index.css
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width : 768px){
+
+     
+    body > .header{
+        height: 500px;
+        width: 100%;
+        background-color: #000;
+        border-bottom: 1px solid #777;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+        position: relative;
+        display: flex;
+    
+        flex-direction: row;
+
+
+
+    }
+    body > .header > .p0{
+
+        height: 100px;
+        width: 100px;
+        
+        margin-left: 50px;
+        font-size: larger;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        background-color: #ffab07;
+        margin-top: 20px;
+        z-index: 10;
+
+        
+
+    }
+    body > .header > .p0 > img{
+        height: 70px;
+        width: 90px;
+
+    }
+
+    body > .header > .p1{
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        right: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    body > .header > .p1 > div{
+        height: 70px;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Helvetica";
+        font-size: medium;
+        cursor: pointer;
+        color: #fff;
+        
+    }
+
+    body > .header > .p1 > div > a:link { 
+        text-decoration: none; 
+        color: #fff;
+      } 
+    body > .header > .p1 > div > a:visited { 
+        text-decoration: none; 
+        color: #fff;
+
+      } 
+    body > .header > .p1 > div > a:hover { 
+        text-decoration: none; 
+        color: #fff;
+
+    } 
+      body > .header > .p1 > div > a:active { 
+
+        text-decoration: none; 
+        color: #fff;
+
+    }
+    
+
+
+    body > .header > .p1 > div.active{
+        border-bottom: 4px solid #ffab07;
+        font-weight: bold;
+    }
+
+
+    body > .corps{
+        height: fit-content;
+        width: 100%;
+        
+    }
+
+    body > .corps > .diaporama {
+
+        height: 80vw;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+
+    body > .corps > .diaporama > .p0 {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.7;
+        position: absolute;
+        z-index: 0;
+    }
+
+    body > .corps > .diaporama > .p1 {
+
+        height: 100%;
+        min-width: 100%;
+        
+
+        z-index: 5;
+
+    }
+
+    body > .corps > .diaporama > .p1 > .ctn {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        box-shadow: 0px 0px 10px #777;
+        animation: fondu 15s ease-in-out infinite both;
+
+    }
+
+
+    @keyframes fondu{
+        0%{background-image: url("./images/venise_home.jpg");}
+        20%{background-image: url("./images/amsterdam_home.jpg");}
+        40%{background-image: url("./images/saint_louis_home.jpg");}
+        60%{background-image: url("./images/abu_dhabi_home.jpg");}
+        80%{background-image: url("./images/caire_home.jpg");}
+        100%{background-image: url("./images/venise_home.jpg");}
+
+
+
+
+
+    }
+
+    body > .corps > .diaporama > .p1:hover, body > .corps > .diaporama > .ctn:hover { 
+        animation-play-state: paused;
+    }
+
+    body > .corps > .p1 {
+        margin-top: 100px;
+        font-size: medium;
+        font-family: Helvetica, sans-serif;
+        height: fit-content;
+        width: fit-content;
+        position: relative;
+        background-color: #000;
+        color: #fff;
+        opacity: 0.7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+    
+    body > .corps > .p1::after {
+        content: "";
+        height: 5px;
+        width: 25%;
+        background-color: #ffab07;
+
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    } 
+    body > .corps > .p1 > strong {
+        background-color: #ffab07;
+        padding: 5px;
+    }
+
+
+    
+
+    body > .corps > .p2 {
+
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 200px;
+
+        position: relative;
+
+    }
+    body > .corps > .p2 > .carte {
+
+        height: 80vw;
+        width: 80%;
+        margin-top: 100px;
+        border: 10px #2a2a2e;
+        border-radius: 5px;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+        
+        position: relative;
+    }
+    body > .corps > .p2 > .carte > .photo {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body > .corps > .p2 > .carte > .photo > img{
+        height: 70%;
+        width: 35%;
+        border-radius: 100%;
+
+
+    }
+
+    body > .corps > .p2 > .carte > .titre{
+        font-size: smaller;
+        font-family: Helvetica;
+        margin-left: 10%;
+        margin-top: 50px;
+        display: block;
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+
+
+
+    body > .corps > .p2 > .carte > .titre::after {
+        content: "";
+        height: 3px;
+        width: 25%;
+        background-color: #ffab07;
+        margin-top: 10px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    } 
+
+    body > .corps > .p2 > .carte > .link{
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        display: block;
+        background-color: #fff;
+        color: #ffab07;
+        border: 1px solid #ffab07;
+        width: fit-content;
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: smaller;
+        font-family: Helvetica;
+    
+
+
+
+    }
+
+
+    body > .corps > .p2 > .carte > .link:link { 
+        text-decoration: none; 
+      } 
+      body > .corps > .p2 > .carte > .link:visited { 
+        text-decoration: none; 
+
+      } 
+      body > .corps > .p2 > .carte > .link:hover { 
+        text-decoration: none; 
+        background-color: #ffab07;
+        color: #fff;
+        border: 1px solid #ffab07;
+
+    } 
+    body > .corps > .p2 > .carte > .link:active { 
+
+        text-decoration: none; 
+
+    }
+
+
+
+
+    
+
+    .footer{
+        height: fit-content;
+        width: 100%;
+        padding-left: 10%;
+        padding-bottom: 100px;
+      }
+
+      .footer > .instagram {
+      
+        height: 40px;
+        width: 80%;
+        background-color: #9b37bb;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+      }
+
+      .footer > .instagram > img {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+    
+      }
+      .footer > .instagram > span {
+        margin-right: 25px;
+        font-size: small;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+
+
+      .footer > .tiktok {
+        margin-top: 50px;
+        height: 40px;
+        width: 70%;
+        background-color: #000;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+      }
+
+      .footer > .tiktok > img {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+      }
+      .footer > .tiktok > span {
+        margin-right: 25px;
+        font-size: small;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+      .footer > .twitter{
+        height: 40px;
+        width: 50%;
+        background-color: #000;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+      }
+      .footer > .twitter > img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+        
+      }
+      .footer > .twitter > span {
+        margin-right: 25px;
+        font-size: large;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+      .footer > .snapchat{
+        height: 40px;
+        width: 40%;
+        background-color: blueviolet;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+
+      }
+      .footer > .snapchat > img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+      .footer > .snapchat > span {
+        margin-right: 25px;
+        font-size: large;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+      
+
+
+
+
+
+
+
+
+
+
+}
+@media (min-width : 768px) and (max-width : 1024px){
+
+
+    body > .header{
+        height: 100px;
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 1px solid #777;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+
+
+
+    }
+    body > .header > .p0{
+
+        height: 120%;
+        width: 150px;
+        
+        margin-left: 10%;
+        font-size: larger;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        background-color: #ffab07;
+
+        z-index: 10;
+
+        
+
+    }
+    body > .header > .p0 > img{
+        height: 80px;
+        width: 100px;
+
+    }
+
+    body > .header > .p1{
+        height: 100%;
+        width: 70%;
+        position: absolute;
+        right: 10px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    body > .header > .p1 > div{
+        height: 60%;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Helvetica";
+        cursor: pointer;
+        color: black;
+        
+    }
+
+    body > .header > .p1 > div > a:link { 
+        text-decoration: none; 
+        color: black;
+      } 
+    body > .header > .p1 > div > a:visited { 
+        text-decoration: none; 
+        color: black;
+
+      } 
+    body > .header > .p1 > div > a:hover { 
+        text-decoration: none; 
+        color: black;
+
+    } 
+      body > .header > .p1 > div > a:active { 
+
+        text-decoration: none; 
+        color: black;
+
+    }
+    
+
+
+    body > .header > .p1 > div.active{
+        border-bottom: 4px solid #ffab07;
+        font-weight: bold;
+    }
+
+
+    body > .corps{
+        height: fit-content;
+        width: 100%;
+        
+    }
+
+    body > .corps > .diaporama {
+
+        height: 800px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+
+    body > .corps > .diaporama > .p0 {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.7;
+        position: absolute;
+        z-index: 0;
+    }
+
+    body > .corps > .diaporama > .p1 {
+
+        height: 100%;
+        min-width: 100%;
+        
+
+        z-index: 5;
+
+    }
+
+    body > .corps > .diaporama > .p1 > .ctn {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        box-shadow: 0px 0px 10px #777;
+        animation: fondu 15s ease-in-out infinite both;
+
+    }
+
+
+    @keyframes fondu{
+        0%{background-image: url("./images/venise_home.jpg");}
+        20%{background-image: url("./images/amsterdam_home.jpg");}
+        40%{background-image: url("./images/saint_louis_home.jpg");}
+        60%{background-image: url("./images/abu_dhabi_home.jpg");}
+        80%{background-image: url("./images/caire_home.jpg");}
+        100%{background-image: url("./images/venise_home.jpg");}
+
+
+
+
+
+    }
+
+    body > .corps > .diaporama > .p1:hover, body > .corps > .diaporama > .ctn:hover { 
+        animation-play-state: paused;
+    }
+
+    body > .corps > .p1 {
+        margin-top: 100px;
+        margin-left: 10%;
+        font-size: xx-large;
+        font-family: Helvetica, sans-serif;
+        height: fit-content;
+        width: fit-content;
+        position: relative;
+        background-color: #000;
+        color: #fff;
+        opacity: 0.7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+
+    }
+    
+    
+    body > .corps > .p1::after {
+        content: "";
+        height: 5px;
+        width: 25%;
+        background-color: #ffab07;
+
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    } 
+    body > .corps > .p1 > strong {
+        background-color: #ffab07;
+        padding: 5px;
+    }
+
+
+    
+
+    body > .corps > .p2 {
+
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 200px;
+
+        position: relative;
+
+    }
+    body > .corps > .p2 > .carte {
+
+        height: 400px;
+        width: 40%;
+        margin-top: 100px;
+        border: 10px #2a2a2e;
+        border-radius: 5px;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+        
+        position: relative;
+    }
+    body > .corps > .p2 > .carte > .photo {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body > .corps > .p2 > .carte > .photo > img{
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+
+
+    }
+
+    body > .corps > .p2 > .carte > .titre{
+        font-size: x-large;
+        font-family: Helvetica;
+        margin-left: 10%;
+        margin-top: 50px;
+        display: block;
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+
+
+
+    body > .corps > .p2 > .carte > .titre::after {
+        content: "";
+        height: 5px;
+        width: 25%;
+        background-color: #ffab07;
+        margin-top: 10px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    } 
+
+    body > .corps > .p2 > .carte > .link{
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        display: block;
+        font-size: large;
+        background-color: #fff;
+        color: #ffab07;
+        border: 1px solid #ffab07;
+        width: 200px;
+        padding-top: 10px;
+        padding-bottom: 6px;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: large;
+        font-family: Helvetica;
+    
+
+
+
+    }
+
+
+    body > .corps > .p2 > .carte > .link:link { 
+        text-decoration: none; 
+      } 
+      body > .corps > .p2 > .carte > .link:visited { 
+        text-decoration: none; 
+
+      } 
+      body > .corps > .p2 > .carte > .link:hover { 
+        text-decoration: none; 
+        background-color: #ffab07;
+        color: #fff;
+        border: 1px solid #ffab07;
+
+    } 
+    body > .corps > .p2 > .carte > .link:active { 
+
+        text-decoration: none; 
+
+    }
+
+
+
+
+    
+
+    .footer{
+        height: fit-content;
+        width: 100%;
+        margin-top: 100px;
+        padding-left: 10%;
+        padding-bottom: 100px;
+      }
+
+      .footer > .instagram {
+      
+        height: 60px;
+        width: 70%;
+        background-color: #9b37bb;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+      }
+
+      .footer > .instagram > img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+      .footer > .instagram > span {
+        margin-right: 25px;
+        font-size: large;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+
+
+      .footer > .tiktok {
+        margin-top: 50px;
+        height: 60px;
+        width: 60%;
+        background-color: #000;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      .footer > .tiktok > img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+      .footer > .tiktok > span {
+        margin-right: 25px;
+        font-size: large;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+      .footer > .twitter{
+        height: 60px;
+        width: 50%;
+        background-color: #000;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 50px;
+
+      }
+      .footer > .twitter > img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+      .footer > .twitter > span {
+        margin-right: 25px;
+        font-size: large;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+      .footer > .snapchat{
+        height: 60px;
+        width: 40%;
+        background-color:blueviolet;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+
+      }
+      .footer > .snapchat > img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+      .footer > .snapchat > span {
+        margin-right: 25px;
+        font-size: large;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+
+
+
+      
+      
+
+
+
+
+
+}
+@media (min-width : 1024px) {
+
+ 
+    body > .header{
+      height: 100px;
+      width: 100%;
+      background-color: #fff;
+      border-bottom:1px solid #777;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+      position: relative;
+      display: flex;
+      flex-direction: row;
+
+
+
+        
+
+
+    
+    }
+    body > .header > .p0{
+
+        height: 120%;
+        width: 150px;
+        
+        margin-left: 20%;
+        font-size: larger;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        background-color: #ffab07;
+
+        z-index: 10;
+
+        
+
+    }
+    body > .header > .p0 > img{
+        height: 80px;
+        width: 100px;
+
+    }
+
+    body > .header > .p1{
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        right: 10px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    body > .header > .p1 > div{
+        height: 60%;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Helvetica";
+        cursor: pointer;
+        color: black;
+        
+    }
+
+    body > .header > .p1 > div > a:link { 
+        text-decoration: none; 
+        color: black;
+      } 
+    body > .header > .p1 > div > a:visited { 
+        text-decoration: none; 
+        color: black;
+
+      } 
+    body > .header > .p1 > div > a:hover { 
+        text-decoration: none; 
+        color: black;
+
+    } 
+      body > .header > .p1 > div > a:active { 
+
+        text-decoration: none; 
+        color: black;
+
+    }
+    
+
+
+    body > .header > .p1 > div.active{
+        border-bottom: 4px solid #ffab07;
+        font-weight: bold;
+    }
+
+
+    body > .corps{
+        height: fit-content;
+        width: 100%;
+        
+    }
+
+    body > .corps > .diaporama {
+
+        height: 800px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+
+    body > .corps > .diaporama > .p0 {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.7;
+        position: absolute;
+        z-index: 0;
+    }
+
+    body > .corps > .diaporama > .p1 {
+
+        height: 100%;
+        min-width: 100%;
+        
+
+        z-index: 5;
+
+    }
+
+     body > .corps > .diaporama > .p1 > .ctn {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        box-shadow: 0px 0px 10px #777;
+        animation: fondu 15s ease-in-out infinite both;
+
+    }
+
+
+    @keyframes fondu{
+        0%{background-image: url("./images/venise_home.jpg");}
+        20%{background-image: url("./images/amsterdam_home.jpg");}
+        40%{background-image: url("./images/saint_louis_home.jpg");}
+        60%{background-image: url("./images/abu_dhabi_home.jpg");}
+        80%{background-image: url("./images/caire_home.jpg");}
+        100%{background-image: url("./images/venise_home.jpg");}
+
+
+
+
+
+    }
+
+    body > .corps > .diaporama > .p1:hover, body > .corps > .diaporama > .ctn:hover { 
+        animation-play-state: paused;
+    }
+
+    body > .corps > .p1 {
+        margin-top: 100px;
+        margin-left: 10%;
+        font-size: xx-large;
+        font-family: Helvetica, sans-serif;
+        height: fit-content;
+        width: fit-content;
+        position: relative;
+        background-color: #000;
+        color: #fff;
+        opacity: 0.7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+
+    }
+    
+    
+    body > .corps > .p1::after {
+        content: "";
+        height: 5px;
+        width: 25%;
+        background-color: #ffab07;
+
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    } 
+    body > .corps > .p1 > strong {
+        background-color: #ffab07;
+        padding: 5px;
+    }
+
+
+    
+
+    body > .corps > .p2 {
+
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 200px;
+
+        position: relative;
+
+    }
+    body > .corps > .p2 > .carte {
+
+        height: 500px;
+        width: 40%;
+        margin-top: 100px;
+        border: 10px #2a2a2e;
+        border-radius: 5px;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+
+        position: relative;
+    }
+    body > .corps > .p2 > .carte > .photo {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body > .corps > .p2 > .carte > .photo > img{
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+
+
+    }
+
+    body >.corps > .p2 > .carte > .titre {
+        font-size: x-large;
+        font-family: Helvetica;
+        margin-left: 10%;
+        margin-top: 50px;
+        display: block;
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+
+
+
+    body > .corps > .p2 > .carte > .titre::after {
+        content: "";
+        height: 5px;
+        width: 25%;
+        background-color: #ffab07;
+        margin-top: 10px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    } 
+
+    body > .corps > .p2 > .carte > .link{
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        display: block;
+        font-size: large;
+        background-color: #fff;
+        color: #ffab07;
+        border: 1px solid #ffab07;
+        width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: large;
+        font-family: Helvetica;
+    
+
+
+
+    }
+
+
+    body > .corps > .p2 > .carte > .link:link  { 
+        text-decoration: none; 
+      } 
+      body > .corps > .p2 > .carte > .link:visited { 
+       text-decoration : none; 
+
+      } 
+      body > .corps > .p2 > .carte > .link:hover { 
+        text-decoration: none; 
+        background-color: #ffab07;
+        color: #fff;
+        border: 1px solid #ffab07;
+
+    } 
+      .p2 > .carte body > .corps> .link:active { 
+
+        text-decoration: none; 
+
+    }
+
+
+
+
+    
+
+    .footer{
+        height: fit-content;
+        width: 100%;
+        margin-top: 100px;
+        padding-left: 10%;
+        padding-bottom: 100px;
+      }
+
+      .footer > .instagram {
+      
+        height: 60px;
+        width: 70%;
+        background-color: #9b37bb;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+      }
+
+      .footer > .instagram > img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+      .footer > .instagram > span {
+        margin-right: 25px;
+        font-size: large;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+
+      .footer > .instagram > a {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+
+
+      .footer > .tiktok {
+        margin-top: 50px;
+        height: 60px;
+        width: 60%;
+        background-color: #000;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+      }
+
+      .footer > .tiktok > img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+      .footer > .tiktok > span {
+        margin-right: 25px;
+        font-size: large;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+      .footer > .tiktok > a {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+
+
+      .footer > .twitter {
+        margin-top: 50px;
+        height: 60px;
+        width: 50%;
+        background-color: #000;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 50px;
+        position:relative;
+      }
+
+      .footer > .twitter > img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+      .footer > .twitter > span {
+        margin-right: 25px;
+        font-size: large;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+     }
+     .footer > .twitter> a {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+     .footer > .snapchat{
+      height: 60px;
+      width: 40%;
+      background-color: blueviolet;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+      position: relative;
+
+    }
+    .footer > .snapchat > img {
+      height: 50px;
+      width: 50px;
+      margin-right: 10px;
+    }
+    .footer > .snapchat > span {
+      margin-right: 25px;
+      font-size: large;
+      font-family: Helvetica, sans-serif;
+      color: #fff;
+    }
+    .footer > .snapchat > a {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+   }
